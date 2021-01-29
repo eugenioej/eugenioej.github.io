@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Site</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white flex-col w-full h-full font-sans">
+  <header class="h-20 shadow flex items-center justify-center">
+    <div class="max-w-6xl flex w-full flex-col sm:flex-row items-center sm:justify-start px-10">
+      <div class="font-bold text-3xl pt-4 sm:pt-0 text-blue-500 hover:text-blue-600">
+        <a href="/">
+          News Site
+        </a>
+      </div>
+      <nav class="ml-8">
+        <ul class="list-none flex uppercase pb-4 sm:py-0 font-light">
+          <li class="hover:underline hover:text-blue-500"><a href="">Tech</a></li>
+          <li class="ml-4 hover:underline hover:text-blue-500"><a href="">Politics</a></li>
+          <li class="ml-4 hover:underline hover:text-blue-500"><a href="">Business</a></li>
+          <li class="ml-4 hover:underline hover:text-blue-500"><a href="">Marketing</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="pt-4 w-full h-full flex justify-center">
+    <!--Main Container with Max Width Restriction-->
+    <div class="max-w-6xl h-full w-full px-10">
+      
+      <!--This is the first section of the site, with a left post and a right list of posts-->
+      <div class="flex flex-col md:flex-row w-full mt-16 justify-center">
+
+        <!--Main Post-->
+        <div class="md:w-2/3 w-full flex flex-col h-full">
+          <div class="w-full h-full">
+            <a href="/post.html">
+              <img class="object-cover w-full h-full hover:opacity-75" src="/images/amazon.jpg" alt="Amazon Image">
+            </a>
+            <div class="mt-6">
+              <a href="#" class="uppercase font-semibold text-blue-500 text-xs hover:underline">Noticias</a>
+              <a href="/post.html">
+                <h2 class="font-bold text-2xl hover:opacity-50">Amazon amplia su programa de transporte secreto</h2>
+              </a>
+              <p class="text-gray-700 mt-2">El esfuerzo de Amazon por ejercer el control sobre el transporte de mercancías a sus clientes está avanzando rápidamente.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Second Posts aside-->
+        <div class="md:w-1/3 md:ml-10 w-full mt-12 md:mt-0">
+
+          <!--First-->
+          <div class="flex w-full flex-row items-start">
+            <div class="w-1/3 h-1/4">
+              <a href="#">
+                <img class="object-cover w-full h-full hover:opacity-75" src="/images/hitch.jpg" alt="">
+              </a>
+            </div>
+            <div class="w-2/3 ml-6">
+              <a href="#" class="uppercase font-semibold text-blue-500 text-xs hover:underline">Noticias</a>
+              <a href="#">
+                <h2 class="font-semibold hover:opacity-50">Hitch te ayuda a encontrar el candidato ideal con ayuda de Inteligencia Artificial</h2>
+              </a>
+            </div>
+          </div>
+
+          <!--Second-->
+          <div class="flex w-full flex-row items-start mt-4 border-t pt-4 ">
+            <div class="w-1/3 h-1/4">
+              <a href="#">
+                <img class="object-cover w-full h-full hover:opacity-75" src="/images/Google.jpg" alt="">
+              </a>
+            </div>
+            <div class="w-2/3 ml-6">
+              <a href="#" class="uppercase font-semibold text-blue-500 text-xs hover:underline">Noticias</a>
+              <a href="#">
+                <h2 class="font-semibold hover:opacity-50">La amenaza de Google en el sur</h2>
+              </a>
+            </div>
+          </div>
+
+          <!--Third-->
+          <div class="flex w-full flex-row items-start mt-4 border-t pt-6 ">
+            <div class="w-1/3 h-1/4">
+              <a href="#">
+                <img class="object-cover w-full h-full hover:opacity-75" src="/images/Proptech.jpg" alt="">
+              </a>
+            </div>
+            <div class="w-2/3 ml-6">
+              <a href="#" class="uppercase font-semibold text-blue-500 text-xs hover:underline">Noticias</a>
+              <a href="#">
+                <h2 class="font-semibold hover:opacity-50">Proptech Houm levantó US$1.3 millones para expandirse en Chile</h2>
+              </a>
+            </div>
+          </div>
+
+          <!--Fourth-->
+          <div class="flex w-full flex-row items-start mt-4 border-t pt-6 ">
+            <div class="w-1/3 h-1/4">
+              <a href="#">
+                <img class="object-cover w-full h-full hover:opacity-75" src="/images/QAnon.jpg" alt="">
+              </a>
+            </div>
+            <div class="w-2/3 ml-6">
+              <a href="#" class="uppercase font-semibold text-blue-500 text-xs hover:underline">Noticias</a>
+              <a href="#">
+                <h2 class="font-semibold hover:opacity-50">Ayudé a desenmascarar a QAnon. Las profecías fallidas no lo eliminarán</h2>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      
+      </div>
+
+      <!--This is the second section of the Homepage, with 4 post cards-->
+      <div class="flex flex-col md:flex-row mt-10 -mx-4 md:items-start items-center">
+
+        <!--First Post Card-->
+        <div class="w-full md:w-1/4 md:mx-4 mt-16 md:mt:16">
+          <a href="#">
+            <img class="mb-4 hover:opacity-75" src="/images/Google.jpg" alt="">
+          </a>
+          <a href="#" class="uppercase font-semibold text-blue-500 text-xs hover:underline">Noticias</a>
+          <a href="#">
+            <h2 class="hover:opacity-50 font-semibold text-lg">Amazon amplia su programa de transporte secreto</h2>
+          </a>
+        </div>
+
+        <!--Second Post Card-->
+        <div class="w-full md:w-1/4 md:mx-4 mt-16 md:mt:16">
+          <a href="#">
+            <img class="mb-4 hover:opacity-75" src="/images/amazon.jpg" alt="">
+          </a>
+          <a href="#" class="uppercase font-semibold text-blue-500 text-xs hover:underline">Noticias</a>
+          <a href="#">
+            <h2 class="hover:opacity-50 font-semibold text-lg">Hitch te ayuda a encontrar el candidato ideal con ayuda de Inteligencia Artificial
+            </h2>
+          </a>
+        </div>
+
+        <!--Third Post Card-->
+        <div class="w-full md:w-1/4 md:mx-4 mt-16 md:mt:16">
+          <a href="#">
+            <img class="mb-4 hover:opacity-75" src="/images/QAnon.jpg" alt="">
+          </a>
+          <a href="#" class="uppercase font-semibold text-blue-500 text-xs hover:underline">Noticias</a>
+          <a href="#">
+            <h2 class="hover:opacity-50 font-semibold text-lg">Proptech Houm levantó US$1.3 millones para expandirse en Chile</h2>
+          </a>
+        </div>
+
+        <!--Fourth Post Card-->
+        <div class="w-full md:w-1/4 md:mx-4 mt-16 md:mt:16">
+          <a href="#">
+            <img class="mb-4 hover:opacity-75" src="/images/Proptech.jpg" alt="">
+          </a>
+          <a href="#" class="uppercase font-semibold text-blue-500 text-xs hover:underline">Noticias</a>
+          <a href="#">
+            <h2 class="hover:opacity-50 font-semibold text-lg">Ayudé a desenmascarar a QAnon. Las profecías fallidas no lo eliminarán</h2>
+          </a>
+        </div>
+
+      </div>
+
+      <!--Last part of homepage, this is a list of posts-->
+      <div class="flex mt-24">
+        <div class="md:w-2/3 w-full md:mt-0 flex flex-col items-start">
+
+          <!--First-->
+          <div div class="flex w-full flex-row items-center">
+            <div class="md:w-1/3 h-full w-1/3">
+              <a href="#">
+                <img class="object-cover w-full h-full hover:opacity-75" src="/images/hitch.jpg" alt="">
+              </a>
+            </div>
+            <div class="w-2/3 ml-8">
+              <a href="#" class="uppercase font-semibold text-blue-500 text-xs hover:underline">Noticias</a>
+              <a href="#">
+                <h2 class="font-semibold hover:opacity-50 text-xl">Hitch te ayuda a encontrar el candidato ideal con ayuda de Inteligencia Artificial</h2>
+              </a>
+              <p class="text-gray-700 mt-2">El esfuerzo de Amazon por ejercer el control sobre el transporte de mercancías a sus clientes está avanzando rápidamente.</p>
+            </div>
+          </div>
+
+          <!--Second-->
+          <div div class="flex w-full flex-row items-center mt-8 border-t pt-8">
+            <div class="md:w-1/3 h-full w-1/3">
+              <a href="#">
+                <img class="object-cover w-full h-full hover:opacity-75" src="/images/Google.jpg" alt="">
+              </a>
+            </div>
+            <div class="w-2/3 ml-8">
+              <a href="#" class="uppercase font-semibold text-blue-500 text-xs hover:underline">Noticias</a>
+              <a href="#">
+                <h2 class="font-semibold hover:opacity-50 text-xl">Ayudé a desenmascarar a QAnon. Las profecías fallidas no lo eliminarán
+                </h2>
+              </a>
+              <p class="text-gray-700 mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam odit, eveniet magni laudantium nesciunt esse molestiae reiciendis recusandae! Autem, suscipit?</p>
+            </div>
+          </div>
+
+          <!--Third-->
+          <div div class="flex w-full flex-row items-center mt-8 border-t pt-8">
+            <div class="md:w-1/3 h-full w-1/3">
+              <a href="#">
+                <img class="object-cover w-full h-full hover:opacity-75" src="/images/QAnon.jpg" alt="">
+              </a>
+            </div>
+            <div class="w-2/3 ml-8">
+              <a href="#" class="uppercase font-semibold text-blue-500 text-xs hover:underline">Noticias</a>
+              <a href="#">
+                <h2 class="font-semibold hover:opacity-50 text-xl">Amazon amplia su programa de transporte secreto</h2>
+              </a>
+              <p class="text-gray-700 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ullam saepe enim et aperiam?</p>
+            </div>
+          </div>
+
+          <!--Fourth-->
+          <div div class="flex w-full flex-row items-center mt-8 border-t pt-8">
+            <div class="md:w-1/3 h-full w-1/3">
+              <a href="#">
+                <img class="object-cover w-full h-full hover:opacity-75" src="/images/Proptech.jpg" alt="">
+              </a>
+            </div>
+            <div class="w-2/3 ml-8">
+              <a href="#" class="uppercase font-semibold text-blue-500 text-xs hover:underline">Noticias</a>
+              <a href="#">
+                <h2 class="font-semibold hover:opacity-50 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+              </a>
+              <p class="text-gray-700 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  
+    </div>
+  </main>
+  <footer class="bg-gray-100 md:h-20 h-32 mt-20 flex items-center justify-center">
+      <div class="max-w-6xl flex w-full flex-col sm:flex-row items-center sm:justify-between px-10">
+        <div class="font-bold text-3xl pt-4 sm:pt-0 mb-2 sm:mb-0 text-gray-900">
+          <a href="#">
+            News Site
+          </a>
+        </div>
+        <nav class="ml-8 flex md:flex-row md:justify-evenly justify-center flex-col items-center">
+          <ul class="list-none flex uppercase pb-4 sm:py-0 font-light">
+            <li class="hover:underline"><a href="">Tech</a></li>
+            <li class="ml-4 hover:underline"><a href="">Politics</a></li>
+            <li class="ml-4 hover:underline"><a href="">Business</a></li>
+            <li class="ml-4 hover:underline"><a href="">Marketing</a></li>
+          </ul>
+          <ul class="list-none flex uppercase pb-4 sm:py-0 font-light">
+            <li class="ml-4 hover:underline"><a href="">SiteMap</a></li>
+            <li class="ml-4 hover:underline"><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+
+        </div>
+      </div>
+  </footer>
+</body>
+</html>

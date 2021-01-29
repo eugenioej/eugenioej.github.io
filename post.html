@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Site</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-white flex-col w-full h-full font-sans">
+    <header class="h-20 shadow flex items-center justify-center">
+      <div class="max-w-6xl flex w-full flex-col sm:flex-row items-center sm:justify-start px-10">
+        <div class="font-bold text-3xl pt-4 sm:pt-0 text-blue-500 hover:text-blue-600">
+          <a href="/">
+            News Site
+          </a>
+        </div>
+        <nav class="ml-8">
+          <ul class="list-none flex uppercase pb-4 sm:py-0 font-light">
+            <li class="hover:underline hover:text-blue-500"><a href="">Tech</a></li>
+            <li class="ml-4 hover:underline hover:text-blue-500"><a href="">Politics</a></li>
+            <li class="ml-4 hover:underline hover:text-blue-500"><a href="">Business</a></li>
+            <li class="ml-4 hover:underline hover:text-blue-500"><a href="">Marketing</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="pt-4 w-full h-full flex justify-center">
+      <div class="max-w-4xl h-full w-full px-10 flex flex-col mt-12">
+        <!--Article Category-->
+        <a href="#" class="uppercase font-semibold text-blue-500 text-xs hover:underline">Noticias</a>
+
+        <!--Article Title-->
+        <h1 class="font-semibold sm:text-5xl  text-4xl mt-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae vel ratione ex repellat!</h1>
+
+        <!--Article Date-->
+        <div class="mt-8 text-xs text-gray-500">enero 25, 2021</div>
+
+        <!--Article Excerpt-->
+        <div class="text-2xl mt-4 pt-4 border-t font-light">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium provident nihil laborum voluptatum ipsum, error id suscipit nesciunt omnis commodi vitae assumenda?
+        </div>
+        <!--Article Image-->
+        <img class="mt-8" src="/images/Proptech.jpg" alt="">
+
+        <!--Article Content-->
+        <div class="w-full flex flex-col items-center">
+          <div class="max-w-xl w-full text-lg font-light leading-6 mt-8 flex flex-col items-center">
+              <p>Primero fueron las sociedades de beneficencia, como los Freemasons y Odd Fellows, de las que se fundaron al menos 17 en la década de 1850. Sus Grandes Logias proporcionaban alojamiento y comida a los enfermos y a los habitantes pobres de las ciudades de tiendas de campaña y pagaban los funerales de los que morían. Cuando estalló el cólera en 1850, las sociedades crearon hospitales y atendieron a los enfermos. Según un observador citado en la <a href="https://www.jstor.org/stable/3642236?seq=1" target="_blank" rel="noopener">Pacific Historical Review</a>, los miembros de las sociedades “contribuían con dinero y esfuerzos tan libremente como si sus vidas se hubieran dedicado a la función exclusiva de la bondad humana”.</p><br>
+              <p>Igualmente importantes fueron las sociedades fundadas y dirigidas íntegramente por mujeres, como las Hijas de la Caridad y la Orden de las Hermanas de la Misericordia. Las Hermanas de la Misericordia crearon el primer hospital permanente del condado en 1857, el Hospital de Santa María. Las Hijas de la Caridad crearon un orfanato y una escuela para niñas en 1852, y más tarde crearon la Sociedad de San Vicente de Paúl para ayudar a las personas sin hogar y vulnerables. La Sociedad de Protección y Socorro de las Damas de San Francisco acogió a mujeres y niños que no tenían a quién recurrir y los orientó hacia una vivienda permanente y, en el caso de las mujeres, hacia un empleo. Todas estas instituciones siguen sirviendo a la comunidad de San Francisco en la actualidad.</p><br>
+              <p>Con una población desempleada de trabajadores no cualificados que había llegado de las minas, y sin colegios ni bibliotecas en California, se inició un esfuerzo masivo para enseñar a estos recién llegados nuevas habilidades. En 1854, un grupo de 20 comerciantes y fabricantes -herreros, carpinteros y constructores- establecieron el Instituto de Mecánica, que combinaba una biblioteca, clases para la enseñanza de oficios y una sala de ajedrez, disponible para el público a bajo coste. Para impulsar el desarrollo de las industrias propias de San Francisco, el Instituto de Mecánica organizó grandes ferias industriales en las que las pequeñas empresas podían exponer y vender sus productos. Entre las empresas locales que participaron en estas ferias se encontraban Levi Strauss y Chocolate Ghirardelli.</p>
+          </div>
+        </div>
+
+        <!--Related Articles-->
+        <div class="border-t-2 mt-8">
+          <div class="flex flex-col md:flex-row mt-10 md:items-start items-center md:-mx-4">
+            
+            <!--First Post Card-->
+            <div class="w-full md:w-1/4 md:mx-4">
+              <a href="#">
+                <img class="mb-4 hover:opacity-75" src="/images/Google.jpg" alt="">
+              </a>
+              <a href="#" class="uppercase font-semibold text-blue-500 text-xs hover:underline">Noticias</a>
+              <a href="#">
+                <h2 class="hover:opacity-50 font-semibold">Amazon amplia su programa de transporte secreto</h2>
+              </a>
+            </div>
+
+            <!--Second Post Card-->
+            <div class="w-full md:w-1/4 md:mx-4 mt-12 md:mt-0">
+              <a href="#">
+                <img class="mb-4 hover:opacity-75" src="/images/amazon.jpg" alt="">
+              </a>
+              <a href="#" class="uppercase font-semibold text-blue-500 text-xs hover:underline">Noticias</a>
+              <a href="#">
+                <h2 class="hover:opacity-50 font-semibold">Hitch te ayuda a encontrar el candidato ideal con ayuda de Inteligencia Artificial
+                </h2>
+              </a>
+            </div>
+
+            <!--Third Post Card-->
+            <div class="w-full md:w-1/4 md:mx-4 mt-12 md:mt-0">
+              <a href="#">
+                <img class="mb-4 hover:opacity-75" src="/images/QAnon.jpg" alt="">
+              </a>
+              <a href="#" class="uppercase font-semibold text-blue-500 text-xs hover:underline">Noticias</a>
+              <a href="#">
+                <h2 class="hover:opacity-50 font-semibold">Proptech Houm levantó US$1.3 millones para expandirse en Chile</h2>
+              </a>
+            </div>
+
+            <!--Fourth Post Card-->
+            <div class="w-full md:w-1/4 md:mx-4 mt-12 md:mt-0">
+              <a href="#">
+                <img class="mb-4 hover:opacity-75" src="/images/Proptech.jpg" alt="">
+              </a>
+              <a href="#" class="uppercase font-semibold text-blue-500 text-xs hover:underline">Noticias</a>
+              <a href="#">
+                <h2 class="hover:opacity-50 font-semibold">Ayudé a desenmascarar a QAnon. Las profecías fallidas no lo eliminarán</h2>
+              </a>
+            </div>
+    
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="bg-gray-100 md:h-20 h-32 mt-20 flex items-center justify-center">
+      <div class="max-w-6xl flex w-full flex-col sm:flex-row items-center sm:justify-between px-10">
+        <div class="font-bold text-3xl pt-4 sm:pt-0 mb-2 sm:mb-0 text-gray-900">
+          <a href="#">
+            News Site
+          </a>
+        </div>
+        <nav class="ml-8 flex md:flex-row md:justify-evenly justify-center flex-col items-center">
+          <ul class="list-none flex uppercase pb-4 sm:py-0 font-light">
+            <li class="hover:underline"><a href="">Tech</a></li>
+            <li class="ml-4 hover:underline"><a href="">Politics</a></li>
+            <li class="ml-4 hover:underline"><a href="">Business</a></li>
+            <li class="ml-4 hover:underline"><a href="">Marketing</a></li>
+          </ul>
+          <ul class="list-none flex uppercase pb-4 sm:py-0 font-light">
+            <li class="ml-4 hover:underline"><a href="">SiteMap</a></li>
+            <li class="ml-4 hover:underline"><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+
+        </div>
+      </div>
+  </footer>
+  </body>
